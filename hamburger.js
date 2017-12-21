@@ -23,6 +23,8 @@ $(document).ready(function() {
         var $trigger = $(".hamburger");
         if($trigger !== event.target && !$trigger.has(event.target).length){
             $(".menu").slideUp("slow");
+            $( ".hamburger" ).show();
+            $( ".cross" ).hide();
         }            
     });
 
